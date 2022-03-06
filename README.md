@@ -17,7 +17,7 @@ Here is an example of assignment 1 (however, pay attention that the rotation and
 ### Tasks
 
 #### Task 1
-Create a configuration panel with four components: 
+Create a configuration panel with the following components: 
 1) A [dropdown](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option) menu with values *perspective* and *orthographic*. Changing the selected option should change the projection type (see Task 5).
 2) A file [input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file) element responsible for loading a JSON file (see Task 3).
 
@@ -83,6 +83,6 @@ The delivery of the assignments will be done using GitHub Classes. It will not b
 - \*.frag.js: fragment shaders.
 
 ### Grading
-The code will be evaluated on Firefox. Your submission will be graded according to the quality of the image results, interactions, and correctness of the implemented algorithms. Your README.me file will also be graded. 
+The code will be evaluated on Firefox. Your submission will be graded according to the quality of the image results, interactions, and correctness of the implemented algorithms.
 
 To get a C on the assignment, your application should be able to load a JSON file in the format specified above, and visualize at least one layer using a perspective projection. To get a B on the assignment, your application should visualize at least two layers using both a perspective projection as well as an orthographic projection. On top of that, the application should implement the zoom interaction. To get an A on the assignment, the application must shade the buildings according to their normals, visualize all four layers, consider the rotation interaction, and have a detailed readme file.
