@@ -1,4 +1,4 @@
-# CS425 - Computer Graphics I (Spring 2022)
+# CS425 - Computer Graphics I
 
 ## Assignment 1: Triangle meshes rendering
 The goal of this assignment is to get you familiar with transformations, and triangle mesh rendering. You will develop an application to render an urban setting described in an external JSON file that must be uploaded by the user through a configuration panel. The JSON file has four layers describing the elements and color of buildings, parks, water and surface of a particular region (see below for a complete description of the file). You should use a unique buffer and VAO for *each* layer.
