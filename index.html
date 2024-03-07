@@ -39,19 +39,26 @@
         <table>
             <tr>
                 <td>Rotate</td>
-                <td><!--TODO: rotate slider--></td>
+                <td><input type="range" id="rotate" min="0" max="360" step="0.05" value="0" oninput="window.updateRotate()"></td>
             </tr>
             <tr>
                 <td>Zoom</td>
-                <td><!--TODO: zoom slider--></td>
+                <td><input type="range" id="zoom" min="0" max="100" oninput="window.updateZoom()" value="0"></td>
             </tr>
             <tr>
                 <td>Projection</td>
-                <td><!--TODO: dropdown menu element--></td>
+                <td>
+                    <select name="projection" id = "projection"> 
+                        <option value ="perspective">Perspective</option>
+                        <option value ="orthographic">Orthographic</option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <td>Layers</td>
-                <td><!--TODO: input element--></td>
+                <td>
+                    <input type ="file"  id ="layer" name ="layer"  accept=".json" />
+                </td>
             </tr>
         </table>
     </div>
