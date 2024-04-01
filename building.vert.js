@@ -10,8 +10,15 @@ in vec3 normal;
 
 out vec4 vColor;
 
+// void main() {
+//     // TODO: set color as the dot product between a light direction, and the vertex normal
+//    // TODO: transform position
+// }
+
 void main() {
-    // TODO: set color as the dot product between a light direction, and the vertex normal
-    // TODO: transform position
+    vec3 lightdir = normalize(vec3(1, 0, 1));
+    float dotp = max(0.25, dot(lightdir, normal));
+    vColor = vec4(dotp * uColor.rgb, 1);
+    gl_Position = uProjection * uView * uModel * vec4(position, 1);
 }
 `;
